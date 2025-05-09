@@ -1,6 +1,6 @@
 package lv0
 
-class Solution {
+class Factorial {
     fun solution(n: Int): Int {
         val answer: Int = factorial(n)
 
