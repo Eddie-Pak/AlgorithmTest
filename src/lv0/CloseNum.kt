@@ -1,5 +1,7 @@
 package lv0
 
+import kotlin.math.abs
+
 class CloseNum {
     fun solution(array: IntArray, n: Int): Int {
 
@@ -9,7 +11,7 @@ class CloseNum {
 
         answer = sortArray[0]
 
-        var minDiff = Math.abs(n - answer)
+        var minDiff = abs(n - answer)
 
         for (num in sortArray) {
             val diff = Math.abs(n - num)
