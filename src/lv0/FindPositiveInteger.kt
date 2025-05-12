@@ -11,13 +11,13 @@ fun main() {
 
     for ((index, dummy) in dummy.withIndex()) {
         println("Test Index - ${index + 1}")
-        println("결과: ${solution(dummy)}")
+        println("결과: ${positiveInteger(dummy)}")
         println()
     }
 
 }
 
-fun solution(A: IntArray): Int {
+fun positiveInteger(A: IntArray): Int {
     val sortedDistinct = A.filter { it > 0 }.sorted().distinct()
 
     var smallInt = 1
